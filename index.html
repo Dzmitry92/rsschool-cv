@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/9016fc90f1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-block">
+        <a href="https://github.com/Dzmitry92">
+          <div class="icon-git">
+            <i class="fab fa-github"></i>
+          </div>
+          <span>GitHub</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="content-box">
+        <div class="section-avatar">
+          <img class="avatar" src="./assets/avatar.jpg" alt="avatar">
+        </div>
+        <div class="basic">
+          <h1>Dzmitry Serafimovich</h1><hr>
+          <h3>Contact:</h3>
+          <p><b>Telephone number:</b> +375293099593</p>
+          <p><b>E-mail:</b> teramisu01@gmail.com</p>
+          <p><b>github:</b> <a href="https://github.com/Dzmitry92">https://github.com/Dzmitry92</a></p><hr>
+          <h3>About me:</h3>
+          <p>I'm a biotechnologist, and I'm disappointed with this choice. So, my goal - to become a programmer. I'm motivated and ready to work in this area, so I really like the profession of a programmer and I understand that this is mine. In particular, frontend development attracts me, and it’s very important for me to get any knowledge in this area.</p>
+          <hr>
+          <h3>Technical Skills:</h3>
+          <p><b>Programming languages and technologies:</b> JavaScript, TypeScript, React, Redux, HTML, CSS</p>
+          <p><b>Tools:</b> GIT, VS Code, Webpack, Gulp</p>
+          <p><b>Other skills:</b> work with image in Photoshop and Gimp</p>
+          <h3>Code examples (selection sort at C++):</h3>
+          <pre>
+
+            int *selection_sort(int *arr, int ptrlength) {
+              for (int i = 0; i &lt; ptrlength - 1; i++) {
+                  int min = i;
+                  for (int j = i + 1; j &lt; ptrlength; j++) {
+                      if (arr[j] &lt; arr[min]) {
+                          min = j;
+                      }
+                  }
+                  if (min != i) {
+                      swap(arr[i], arr[min]);
+                  }
+              }
+              return arr;
+            }
+          </pre>
+          <h3>Education:</h3>
+          <p>The Rolling Scopes School <a href="https://rs.school/">(https://rs.school/)</a> 28.03.2021 - now</p>
+          <h3>English:</h3>
+          <p>My English level - pre-intermediate. I currently practice English at the Polyglot language school.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
