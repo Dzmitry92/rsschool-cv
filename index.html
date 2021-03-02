@@ -44,10 +44,10 @@
           <pre>
 
             int *selection_sort(int *arr, int ptrlength) {
-              for (int i = 0; i &lt ptrlength - 1; i++) {
+              for (int i = 0; i &lt; ptrlength - 1; i++) {
                   int min = i;
-                  for (int j = i + 1; j &lt ptrlength; j++) {
-                      if (arr[j] &lt arr[min]) {
+                  for (int j = i + 1; j &lt; ptrlength; j++) {
+                      if (arr[j] &lt; arr[min]) {
                           min = j;
                       }
                   }
