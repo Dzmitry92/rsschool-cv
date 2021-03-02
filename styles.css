@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: #323232;
+}
+
+header .navigation-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1024px;
+}
+
+header a {
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+header .icon-git {
+  margin-right: 5px;
+  color:white;
+  cursor: pointer;
+}
+
+header span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: color 0.1s linear;
+}
+
+header span:hover {
+  color: rgb(202, 202, 202);
+}
