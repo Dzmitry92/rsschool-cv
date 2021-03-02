@@ -3,90 +3,125 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  background-color: #323232;
+* {
+  box-sizing: border-box;
 }
 
-header .navigation-block {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 1024px;
+h1, h2, h3, p, a {
+  margin: 0;
 }
 
-header a {
-  margin-left: 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  text-decoration: none;
-}
-
-header .icon-git {
-  margin-right: 5px;
-  color:white;
-  cursor: pointer;
-}
-
-header span {
-  color: white;
-  cursor: pointer;
-  transition: color 0.1s linear;
-}
-
-header span:hover {
-  color: rgb(202, 202, 202);
-}
-
-main {
+.content {
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  max-width: 1024px;
+  width: 100%;
+  max-width: 1020px;
+  padding: 0 90px;
+  
+  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 50%);
 }
 
-.content-box {
+.header-page {
   display: flex;
-  margin-top: 20px;
+  width: 100%;
 }
 
-.section-avatar {
-  margin: 5px;
-  width: 270px;
-  height: 270px;
-  border-radius: 5px;
+.person {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+}
+
+.avatar-container {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
   overflow: hidden;
 }
 
-.avatar {
+.avatar-container > img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.basic {
-  flex: 1;
-  margin: 10px;
+.heading-container {
+  width: 450px;
 }
 
-h1 {
-  margin: 0 0 10px 0
+.heading-container > h1 {
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
-.basic p {
-  margin: 10px 0 10px 0;
+.heading-container > h3 {
+  font-size: 25px;
+  font-weight: 200;
 }
 
-.basic h3 {
+.main-page {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 410px;
+}
+
+.card > h2 {
+  margin-bottom: 15px;
+}
+
+.concats__list, .skills__list, .education__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.concats__item, .skills__item {
+  display: flex;
+  align-items: center;
+}
+
+.skills__item {
+  justify-content: space-between;
+}
+
+.skills__item:not(:last-child) {
   margin-bottom: 5px;
 }
 
-pre {
-  font-size: 14px;
-  background-color: rgb(215, 212, 255);
-  border-radius: 1%;
+.dots-box {
+  margin-right: 200px;
+  display: flex;
+  list-style-type: none;
+}
+
+.dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid 2px black
+}
+
+.dot:not(:last-child) {
+  margin-right: 2px;
+}
+
+.full {
+  background-color: blueviolet;
+}
+
+.code-container {
+  padding: 10px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
 }
