@@ -1,0 +1,92 @@
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: #323232;
+}
+
+header .navigation-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1024px;
+}
+
+header a {
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+header .icon-git {
+  margin-right: 5px;
+  color:white;
+  cursor: pointer;
+}
+
+header span {
+  color: white;
+  cursor: pointer;
+  transition: color 0.1s linear;
+}
+
+header span:hover {
+  color: rgb(202, 202, 202);
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1024px;
+}
+
+.content-box {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section-avatar {
+  margin: 5px;
+  width: 270px;
+  height: 270px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.basic {
+  flex: 1;
+  margin: 10px;
+}
+
+h1 {
+  margin: 0 0 10px 0
+}
+
+.basic p {
+  margin: 10px 0 10px 0;
+}
+
+.basic h3 {
+  margin-bottom: 5px;
+}
+
+pre {
+  font-size: 14px;
+  background-color: rgb(215, 212, 255);
+  border-radius: 1%;
+}
