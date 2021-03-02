@@ -1,6 +1,8 @@
 body {
   margin: 0 auto;
+  max-width: 1020px;
   font-family: 'Open Sans', sans-serif;
+  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 50%);
 }
 
 * {
@@ -11,13 +13,24 @@ h1, h2, h3, p, a {
   margin: 0;
 }
 
+h3, p {
+  color: #666666;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .content {
   margin: 0 auto;
   width: 100%;
   max-width: 1020px;
   padding: 0 90px;
-  
-  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 50%);
 }
 
 .header-page {
@@ -79,7 +92,7 @@ h1, h2, h3, p, a {
   margin-bottom: 15px;
 }
 
-.concats__list, .skills__list, .education__list {
+.concats__list, .skills__list, .education__list, .footer__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -124,4 +137,37 @@ h1, h2, h3, p, a {
   padding: 10px;
   background-color: #F6F6F6;
   border-radius: 10px;
+}
+
+.footer-page {
+  padding: 0 90px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #F6F6F6;
+}
+
+.footer__list {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.fa-github {
+  font-size: 26px;
+}
+
+.rssLogo {
+  width: 60px;
+}
+
+.rssLogo:hover, .fa-github:hover  {
+  transform: scale(1.1);
+  transition-duration: 300ms;
 }
