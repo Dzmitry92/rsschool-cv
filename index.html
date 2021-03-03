@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/9016fc90f1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content">
+      <header class="header-page">
+        <figure class="person">
+          <div class="avatar-container">
+            <img src="./assets/avatar.jpg" alt="avatar">
+          </div>
+          <figcaption class="heading-container">
+            <h1>Dzmitry Serafimovich</h1>
+            <h3>Frontend developer</h3>
+          </figcaption>
+        </figure>
+      </header>
+      <main class="main-page">
+        <section class="card concats">
+          <h2>Concat:</h2>
+          <ul class="concats__list">
+            <li class="concats__item">
+              <i class="fas fa-mobile-alt concats__icon"></i>
+              <a class="concats__link" href="tel:+375291936754">+375293099593</a>
+            </li>
+            <li class="concats__item">
+              <i class="fas fa-envelope concats__icon"></i>
+              <a class="concats__link" href="mailto:teramisu01@gmail.com">teramisu01@gmail.com</a>
+            </li>
+            <li class="concats__item">
+              <i class="fab fa-telegram-plane concats__icon"></i>
+              <a class="concats__link" href="https://t.me/Dmtrshb">@Dmtrshb</a>
+            </li>
+          </ul>
+        </section>
+        <section class="card aboutMe">
+          <h2>About me:</h2>
+          <p>
+            I'm a biotechnologist, and I'm disappointed with this choice. So, my goal - to become a programmer. I'm motivated and ready to work in this area, so I really like the profession of a programmer and I understand that this is mine. In particular, frontend development attracts me, and it’s very important for me to get any knowledge in this area.
+          </p>
+        </section>
+        <section class="card skills">
+          <h2>Skills:</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <span>JavaScript</span>
+              <ul class="dots-box">
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+              </ul>
+            </li>
+            <li class="skills__item">
+              <span>HTML</span>
+              <ul class="dots-box">
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot"></li>
+              </ul>
+            </li>
+            <li class="skills__item">
+              <span>CSS/SCSS</span>
+              <ul class="dots-box">
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot"></li>
+              </ul>
+            </li>
+            <li class="skills__item">
+              <span>React</span>
+              <ul class="dots-box">
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot "></li>
+                <li class="dot "></li>
+                <li class="dot"></li>
+              </ul>
+            </li>
+            <li class="skills__item">
+              <span>TypeScript</span>
+              <ul class="dots-box">
+                <li class="dot full"></li>
+                <li class="dot full"></li>
+                <li class="dot "></li>
+                <li class="dot "></li>
+                <li class="dot"></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="card code">
+          <h2>Code examples (selection sort at C++):</h2>
+          <pre class="code-container">
+  int *selection_sort(int *arr, int ptrlength) {
+    for (int i = 0; i &lt; ptrlength - 1; i++) {
+      int min = i;
+      for (int j = i + 1; j &lt; ptrlength; j++) {
+        if (arr[j] &lt; arr[min]) {
+          min = j;
+        }
+      }
+      if (min != i) {
+        swap(arr[i], arr[min]);
+      }
+    }
+    return arr;
+  }       </pre>
+        </section>
+        <section class="card education">
+          <h2>Education:</h2>
+          <ul class="education__list">
+            <li class="education__item"><span>HTML, CSS on </span><a href="https://htmlacademy.ru">htmlacademy.ru</a></li>
+            <li class="education__item"><span>JavaScript on </span><a href="https://learn.javascript.ru">learn.javascript.ru</a></li>
+            <li class="education__item"><span>React on </span><a href="https://reactjs.org/">reactjs.org</a></li>
+          </ul>
+        </section>
+        <section class="card language">
+          <h2>English:</h2>
+          <p>My English level - pre-intermediate. I currently practice English at the Polyglot language school.</p>
+        </section>
+      </main>
+    </div>
+    <footer class="footer-page">
+      <ul class="footer__list">
+        <li class="footer__item"><span>2021</span></li>
+        <li class="footer__item"><a href="https://rs.school/js/"><img class="rssLogo" src="./assets/rs_school_js.svg" alt="RS_School"></a></li>
+        <li class="footer__item"><a href="https://github.com/Dzmitry92"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
