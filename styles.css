@@ -121,6 +121,11 @@ a:hover {
   text-align: center;
   width: 16px;
 }
+
+.fa-mobile-alt {
+  color: #512c63;
+}
+
 .fa-envelope {
   color: #d93025;
 }
